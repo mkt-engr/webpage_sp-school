@@ -72,13 +72,14 @@
 
 .modal__header .modal__close:before {
   content: "✕";
+  color: white;
 }
 
 .modal__content {
   margin-top: 2rem;
   margin-bottom: 2rem;
   line-height: 1.5;
-  color: rgba(0, 0, 0, 0.8);
+  color: white;
 }
 
 .modal__btn {
@@ -189,4 +190,9 @@
   left: 0;
   height: 100vh;
   width: 70%;
+}
+
+.is-open .modal__container {
+  background-color: black;
+  color: white;
 }

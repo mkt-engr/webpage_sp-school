@@ -1,5 +1,6 @@
 "use strict";
 
 MicroModal.init({
-  awaitCloseAnimation: true
+  awaitCloseAnimation: true //閉じる時のアニメーションを有効にする
+
 });

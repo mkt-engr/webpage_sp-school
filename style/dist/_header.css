@@ -1,14 +1,15 @@
-@use "../style/mixin/responsive" as *;
 .headerWrapper {
   display: flex;
-  background-color: rgb(13, 13, 13);
+  background-color: #0d0d0d;
   color: white;
   padding: 1rem 2rem;
 }
 
 .headerHamburger {
   display: block;
-  @include responsive(md) {
+}
+@media screen and (min-width: 768px) {
+  .headerHamburger {
     display: none;
   }
 }
@@ -20,25 +21,32 @@
 .listWrapper {
   margin-left: auto;
   display: none;
-  @include responsive(md) {
+}
+@media screen and (min-width: 768px) {
+  .listWrapper {
     display: block;
   }
 }
+
 .list {
   display: block;
-  @include responsive(md) {
+}
+@media screen and (min-width: 768px) {
+  .list {
     display: flex;
   }
 }
 
 .list__item {
-  // padding: 1rem 1.5rem;
   padding: 1rem;
-  @include responsive(md) {
+}
+@media screen and (min-width: 768px) {
+  .list__item {
     margin-right: 1rem;
     padding: 0;
   }
 }
+
 .list__link {
   display: block;
 }

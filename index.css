@@ -119,13 +119,14 @@ a {
 
 .modal__header .modal__close:before {
   content: "✕";
+  color: white;
 }
 
 .modal__content {
   margin-top: 2rem;
   margin-bottom: 2rem;
   line-height: 1.5;
-  color: rgba(0, 0, 0, 0.8);
+  color: white;
 }
 
 .modal__btn {
@@ -270,6 +271,11 @@ a {
   width: 70%;
 }
 
+.is-open .modal__container {
+  background-color: black;
+  color: white;
+}
+
 body {
   width: 100%;
 }
@@ -291,7 +297,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .headerHamburger {
-    display: block;
+    display: none;
   }
 }
 
@@ -301,14 +307,31 @@ body {
 
 .listWrapper {
   margin-left: auto;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .listWrapper {
+    display: block;
+  }
 }
 
 .list {
-  display: flex;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .list {
+    display: flex;
+  }
 }
 
 .list__item {
-  margin-right: 1rem;
+  padding: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .list__item {
+    margin-right: 1rem;
+    padding: 0;
+  }
 }
 
 .list__link {
