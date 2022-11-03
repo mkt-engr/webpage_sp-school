@@ -5,6 +5,10 @@
   padding: 1rem 2rem;
 }
 
+.headerLogo {
+  display: flex;
+}
+
 .listWrapper {
   margin-left: auto;
 }
