@@ -6,11 +6,15 @@ html(lang="ja")
     main
       section   
         h1 SP個別学院 
-        include template/_modal
-        button(aria-label="Open modal",     data-micromodal-open="modal-1", 
-                  data-micromodal-trigger="modal-1")
-                    | open
+        include template/_modal_sample
+        button(aria-label="Open modal",     data-micromodal-open="modal-sample", 
+                  data-micromodal-trigger="modal-sample")
+                    | open     
       section 
+        include template/_hamburgerMenu
+        button(aria-label="Open modal",     data-micromodal-open="modal-hamburger", 
+          data-micromodal-trigger="modal-hamburger")
+            | ハンバーガー開く
       section 
       section 
     script(type="module" src="./script/modal.js")

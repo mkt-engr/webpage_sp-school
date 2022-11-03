@@ -1,9 +1,21 @@
+@use "../style/mixin/responsive" as *;
 .headerWrapper {
   display: flex;
   background-color: rgb(13, 13, 13);
   color: white;
   padding: 1rem 2rem;
 }
+
+.headerHamburger {
+  display: block;
+  @include responsive(md) {
+    //TODO DEBUG用
+    display: block;
+
+    // display: none;
+  }
+}
+
 .headerLogo {
   display: flex;
 }
