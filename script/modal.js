@@ -1,1 +1,1 @@
-MicroModal.init();
+MicroModal.init({ awaitCloseAnimation: true });
