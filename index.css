@@ -1,4 +1,41 @@
 @charset "UTF-8";
+*,
+*::before,
+*::after {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
 /**************************\
   Basic Modal Styles 
 \**************************/
@@ -201,4 +238,4 @@
 .micromodal-slide .modal__container,
 .micromodal-slide .modal__overlay {
   will-change: transform;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=index.css.map */
