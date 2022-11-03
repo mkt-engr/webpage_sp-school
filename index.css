@@ -263,6 +263,13 @@ a {
   will-change: transform;
 }
 
+.is-open .modal__container {
+  position: absolute;
+  left: 0;
+  height: 100vh;
+  width: 70%;
+}
+
 body {
   width: 100%;
 }

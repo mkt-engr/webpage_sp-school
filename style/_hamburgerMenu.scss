@@ -187,3 +187,11 @@
 .micromodal-slide .modal__overlay {
   will-change: transform;
 }
+
+// カスタムCSS
+.is-open .modal__container {
+  position: absolute;
+  left: 0;
+  height: 100vh;
+  width: 70%;
+}
