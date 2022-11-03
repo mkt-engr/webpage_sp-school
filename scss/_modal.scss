@@ -1,7 +1,7 @@
-@charset "UTF-8";
 /**************************\
-  Basic Modal Styles
+  Basic Modal Styles 
 \**************************/
+
 .modal {
   display: none;
 }
@@ -11,7 +11,8 @@
 }
 
 .modal {
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
 }
 
 .modal__overlay {
@@ -58,7 +59,7 @@
 }
 
 .modal__header .modal__close:before {
-  content: "✕";
+  content: "\2715";
 }
 
 .modal__content {
@@ -118,6 +119,7 @@
     opacity: 1;
   }
 }
+
 @keyframes mmfadeOut {
   from {
     opacity: 1;
@@ -126,6 +128,7 @@
     opacity: 0;
   }
 }
+
 @keyframes mmslideIn {
   from {
     transform: translateY(15%);
@@ -134,6 +137,7 @@
     transform: translateY(0);
   }
 }
+
 @keyframes mmslideOut {
   from {
     transform: translateY(0);
@@ -142,6 +146,7 @@
     transform: translateY(-10%);
   }
 }
+
 .micromodal-slide {
   display: none;
 }
@@ -150,19 +155,19 @@
   display: block;
 }
 
-.micromodal-slide[aria-hidden=false] .modal__overlay {
+.micromodal-slide[aria-hidden="false"] .modal__overlay {
   animation: mmfadeIn 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
 
-.micromodal-slide[aria-hidden=false] .modal__container {
+.micromodal-slide[aria-hidden="false"] .modal__container {
   animation: mmslideIn 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
 
-.micromodal-slide[aria-hidden=true] .modal__overlay {
+.micromodal-slide[aria-hidden="true"] .modal__overlay {
   animation: mmfadeOut 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
 
-.micromodal-slide[aria-hidden=true] .modal__container {
+.micromodal-slide[aria-hidden="true"] .modal__container {
   animation: mmslideOut 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
 
