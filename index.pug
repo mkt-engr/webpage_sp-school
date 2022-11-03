@@ -3,10 +3,15 @@ html(lang="ja")
   include template/_head
   body
     include template/_header
-    h1 SP個別学院
-    p どんな塾？
-    include template/_modal
-    button(aria-label="Open modal",     data-micromodal-open="modal-1", 
-              data-micromodal-trigger="modal-1")
-                | open
+    main
+      section   
+        h1 SP個別学院
+        p どんな塾？
+        include template/_modal
+        button(aria-label="Open modal",     data-micromodal-open="modal-1", 
+                  data-micromodal-trigger="modal-1")
+                    | open
+      section 
+      section 
+      section 
     script(type="module" src="./script/modal.js")

@@ -1,0 +1,25 @@
+.headerWrapper {
+  display: flex;
+  background-color: rgb(13, 13, 13);
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.listWrapper {
+  margin-left: auto;
+}
+.list {
+  display: flex;
+}
+
+.list__item {
+  // padding: 1rem 1.5rem;
+  margin-right: 1rem;
+}
+.list__link {
+  display: block;
+}
+
+.list__link:hover {
+  color: #1aba1a;
+}

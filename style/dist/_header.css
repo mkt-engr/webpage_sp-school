@@ -1,0 +1,26 @@
+.headerWrapper {
+  display: flex;
+  background-color: #0d0d0d;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.listWrapper {
+  margin-left: auto;
+}
+
+.list {
+  display: flex;
+}
+
+.list__item {
+  margin-right: 1rem;
+}
+
+.list__link {
+  display: block;
+}
+
+.list__link:hover {
+  color: #1aba1a;
+}

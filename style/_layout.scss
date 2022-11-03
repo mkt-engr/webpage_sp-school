@@ -1,0 +1,9 @@
+// @use "./mixins/responsive" as *;
+body {
+  width: 100%;
+}
+
+.sectionWrapper {
+  margin-inline: auto;
+  width: min(80%, 1300px);
+}

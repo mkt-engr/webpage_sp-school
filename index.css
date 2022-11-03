@@ -3,6 +3,7 @@
 *::before,
 *::after {
   margin: 0;
+  padding: 0;
 }
 
 html,
@@ -17,6 +18,10 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
+}
+
+ul {
+  list-style: none;
 }
 
 input,
@@ -34,6 +39,11 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /**************************\
@@ -238,4 +248,40 @@ h6 {
 .micromodal-slide .modal__container,
 .micromodal-slide .modal__overlay {
   will-change: transform;
+}
+
+body {
+  width: 100%;
+}
+
+.sectionWrapper {
+  margin-inline: auto;
+  width: min(80%, 1300px);
+}
+
+.headerWrapper {
+  display: flex;
+  background-color: rgb(13, 13, 13);
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.listWrapper {
+  margin-left: auto;
+}
+
+.list {
+  display: flex;
+}
+
+.list__item {
+  margin-right: 1rem;
+}
+
+.list__link {
+  display: block;
+}
+
+.list__link:hover {
+  color: #1aba1a;
 }/*# sourceMappingURL=index.css.map */
