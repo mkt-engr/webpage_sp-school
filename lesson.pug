@@ -1,0 +1,17 @@
+doctype html
+html(lang="ja")
+  include template/_head
+  body
+    include template/_header
+    main
+      section   
+        h1 授業スタイル
+        
+        include template/_modal
+        button(aria-label="Open modal",     data-micromodal-open="modal-1", 
+                  data-micromodal-trigger="modal-1")
+                    | open
+      section 
+      section 
+      section 
+    script(type="module" src="./script/modal.js")
