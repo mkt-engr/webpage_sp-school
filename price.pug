@@ -4,7 +4,12 @@ html(lang="ja")
   body
     include template/_header
     main
-      section   
-        h1 料金プラン
-        
+      section.sectionWrapper
+        .contentTitleWrapper   
+          h1.contentTitle 料金プラン      
+        .contentSubTitleWrapper
+          h2.contentSubTitle 授業60分+質問付き自習30分
+      section.sectionWrapper 
+        img(src="/images/料金プランjpeg.jpeg")
+    include template/_hamburgerMenu
     script(type="module" src="./script/modal.js")
