@@ -6,8 +6,9 @@ html(lang="ja")
     main
       section.sectionWrapper.sectionWrapper--wide
         img(src="/images/titleimage.png").topImage
-      section.sectionWrapper   
-        h1 毎授業ひとつ上の自分に  
+      section.sectionWrapper.sectionWrapper--center  
+        .topMessageWrapper 
+          h1.topMessage 毎授業ひとつ上の自分に  
       section.sectionWrapper
         .cardWrapper
           .card
@@ -23,21 +24,22 @@ html(lang="ja")
             .card__img 
               img(src="/images/03.jpg")
       section.sectionWrapper.sectionWrapper--center
-        .d
-        | 授業時間割
-        ul.list
-          li.list__item       
-            | 16:30-17:30
-          li.list__item 
-            | 17:30-18:30
-          li.list__item 
-            | 18:30-19:30
-          li.list__item 
-            | 19:30-20:30
-          li.list__item     
-            | 20:30-21:30
-        button  
-          | お問い合せ
+        .time__title
+          | 授業時間割
+        ul.timeList
+          li.time__item
+            |16:30-17:30
+          li.time__item
+            |17:30-18:30
+          li.time__item
+            |18:30-19:30
+          li.time__item 
+            |19:30-20:30
+          li.time__item     
+            |20:30-21:30
+        .inquiryWrapper
+          a(href="https://docs.google.com/forms/d/18Q_44KE6iqUSLjWerCJgdOxEZ5x8hrvXqY1dA5zRme4/viewform?edit_requested=true").inquiryLink
+            | お問い合せ
       section.sectionWrapper
        .media
         .media__info 

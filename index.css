@@ -296,6 +296,7 @@ body {
 .sectionWrapper {
   margin-inline: auto;
   width: min(80%, 1300px);
+  margin-bottom: 3rem;
 }
 
 .sectionWrapper--wide {
@@ -311,6 +312,16 @@ body {
   height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.topMessageWrapper {
+  margin: 5rem 0 3rem;
+}
+
+.topMessage {
+  color: var(--sub-color);
+  font-size: 32px;
+  font-weight: 400;
 }
 
 .cardWrapper {
@@ -329,9 +340,13 @@ body {
   }
 }
 
+.card:not(:last-child) {
+  margin-bottom: 2rem;
+}
 @media screen and (min-width: 768px) {
   .card:not(:last-child) {
     margin-right: 1.5rem;
+    margin-bottom: 0;
   }
 }
 
@@ -339,6 +354,38 @@ body {
   color: var(--main-color-first);
   font-size: 32px;
   text-align: center;
+}
+
+.timeList {
+  margin-bottom: 2rem;
+}
+
+.time__title {
+  font-size: 32px;
+  margin-bottom: 1rem;
+}
+
+.time__item {
+  font-size: 32px;
+  margin-bottom: 0.5rem;
+}
+
+.inquiryWrapper {
+  margin-bottom: 2rem;
+}
+
+.inquiryLink {
+  display: inline-block;
+  background-color: rgb(86, 174, 86);
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  color: black;
+  text-decoration: none;
+  transition: box-shadow 0.4s ease-in-out;
+}
+
+.inquiryLink:hover {
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.65);
 }
 
 .media {
