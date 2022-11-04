@@ -1,12 +1,13 @@
 header.header 
   .headerWrapper
     .headerHamburger      
-      button(aria-label="Open modal",     data-micromodal-open="modal-hamburger", 
-      data-micromodal-trigger="modal-hamburger")
-        | H
+      button(aria-label="Open modal",data-micromodal-open="modal-hamburger", 
+      data-micromodal-trigger="modal-hamburger").c-button.p-hamburger
+       span.material-symbols-outlined.custom
+        | menu
     .headerLogo  
       .headerImage
-        img(src="https://picsum.photos/30")
+        img(src="https://picsum.photos/30",alt="SP個別学院のロゴ")
       .headerTitle
         a(href="/")
           | SP個別学院WebSite

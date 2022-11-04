@@ -3,7 +3,7 @@
 \**************************/
 
 .modal {
-  --modal-inner-padding: 30px;
+  --modal-inner-padding: 20px;
   display: block;
   position: absolute;
   left: 0;
@@ -207,6 +207,6 @@
 
 //デフォルトだと.modal__containerのpaddingの部分をクリックしてもモーダルが閉じるのでcontainerの下にinnerを追加
 .modal__inner {
-  padding: var(--modal-inner-padding);
+  padding: var(--modal-inner-padding) 30px;
   height: calc(100vh - var(--modal-inner-padding) * 2);
 }

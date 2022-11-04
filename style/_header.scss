@@ -1,50 +1,49 @@
 @use "../style/mixin/responsive" as *;
 
-header {
-  .headerWrapper {
-    display: flex;
-    background-color: rgb(13, 13, 13);
-    color: white;
-    padding: 1rem 2rem;
-  }
+.headerWrapper {
+  display: flex;
+  background-color: rgb(13, 13, 13);
+  color: white;
+  padding: 1rem 2rem;
+}
 
-  .headerHamburger {
-    display: block;
-    @include responsive(md) {
-      display: none;
-    }
-  }
-
-  .headerLogo {
-    display: flex;
-  }
-
-  .listWrapper {
-    margin-left: auto;
+.headerHamburger {
+  display: block;
+  @include responsive(md) {
     display: none;
-    @include responsive(md) {
-      display: block;
-    }
   }
-  .list {
-    display: block;
-    @include responsive(md) {
-      display: flex;
-    }
-  }
+}
 
-  .list__item {
-    // padding: 1rem 1.5rem;
-    padding: 1rem;
-    @include responsive(md) {
-      margin-right: 1rem;
-      padding: 0;
-    }
-  }
-  .list__link {
+.headerLogo {
+  display: flex;
+}
+
+.listWrapper {
+  margin-left: auto;
+  display: none;
+  @include responsive(md) {
     display: block;
   }
 }
+.list {
+  display: block;
+  @include responsive(md) {
+    display: flex;
+  }
+}
+
+.list__item {
+  // padding: 1rem 1.5rem;
+  padding: 1rem;
+  @include responsive(md) {
+    margin-right: 1rem;
+    padding: 0;
+  }
+}
+.list__link {
+  display: block;
+}
+
 .list__link:hover {
   color: #1aba1a;
 }
