@@ -302,11 +302,80 @@ body {
   width: 100%;
 }
 
+.sectionWrapper--center {
+  text-align: center;
+}
+
 .topImage {
   width: 100%;
   height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.cardWrapper {
+  display: block;
+  margin-inline: auto;
+}
+@media screen and (min-width: 768px) {
+  .cardWrapper {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 33.3333333333%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+}
+
+.card__text {
+  color: var(--main-color-first);
+  font-size: 32px;
+  text-align: center;
+}
+
+.media {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .media {
+    display: flex;
+  }
+}
+
+.media__info {
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .media__info {
+    margin-bottom: 0;
+    width: 50%;
+  }
+}
+
+.media__text {
+  font-size: 20px;
+}
+
+.media__text:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.media__text--strong {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .media__map {
+    width: 50%;
+  }
 }
 
 .contentTitleWrapper {
@@ -345,56 +414,50 @@ body {
   margin-bottom: 1rem;
 }
 
-.headerWrapper {
+header .headerWrapper {
   display: flex;
   background-color: rgb(13, 13, 13);
   color: white;
   padding: 1rem 2rem;
 }
-
-.headerHamburger {
+header .headerHamburger {
   display: block;
 }
 @media screen and (min-width: 768px) {
-  .headerHamburger {
+  header .headerHamburger {
     display: none;
   }
 }
-
-.headerLogo {
+header .headerLogo {
   display: flex;
 }
-
-.listWrapper {
+header .listWrapper {
   margin-left: auto;
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .listWrapper {
+  header .listWrapper {
     display: block;
   }
 }
-
-.list {
+header .list {
   display: block;
 }
 @media screen and (min-width: 768px) {
-  .list {
+  header .list {
     display: flex;
   }
 }
-
-.list__item {
+header .list__item {
   padding: 1rem;
 }
 @media screen and (min-width: 768px) {
-  .list__item {
+  header .list__item {
     margin-right: 1rem;
     padding: 0;
   }
 }
-
-.list__link {
+header .list__link {
   display: block;
 }
 

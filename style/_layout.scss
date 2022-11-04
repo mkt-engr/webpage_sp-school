@@ -1,4 +1,4 @@
-// @use "./mixins/responsive" as *;
+@use "../style/mixin/responsive" as *;
 body {
   width: 100%;
 }
@@ -12,10 +12,73 @@ body {
   width: 100%;
 }
 
+.sectionWrapper--center {
+  text-align: center;
+}
+
 .topImage {
   width: 100%;
   height: 500px;
   object-fit: cover;
+}
+
+.cardWrapper {
+  display: block;
+  margin-inline: auto;
+  @include responsive(md) {
+    display: flex;
+  }
+}
+
+.card {
+  @include responsive(md) {
+    width: calc(100% / 3);
+  }
+}
+
+.card:not(:last-child) {
+  @include responsive(md) {
+    margin-right: 1.5rem;
+  }
+}
+
+.card__text {
+  color: var(--main-color-first);
+  font-size: 32px;
+  text-align: center;
+}
+
+.media {
+  display: block;
+  @include responsive(md) {
+    display: flex;
+  }
+}
+
+.media__info {
+  margin-bottom: 2rem;
+  @include responsive(md) {
+    margin-bottom: 0;
+    width: 50%;
+  }
+}
+
+.media__text {
+  font-size: 20px;
+}
+
+.media__text:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.media__text--strong {
+  font-weight: bold;
+}
+
+.media__map {
+  @include responsive(md) {
+    width: 50%;
+  }
 }
 
 .contentTitleWrapper {

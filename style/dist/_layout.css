@@ -11,10 +11,79 @@ body {
   width: 100%;
 }
 
+.sectionWrapper--center {
+  text-align: center;
+}
+
 .topImage {
   width: 100%;
   height: 500px;
   object-fit: cover;
+}
+
+.cardWrapper {
+  display: block;
+  margin-inline: auto;
+}
+@media screen and (min-width: 768px) {
+  .cardWrapper {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: calc(100% / 3);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+}
+
+.card__text {
+  color: var(--main-color-first);
+  font-size: 32px;
+  text-align: center;
+}
+
+.media {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .media {
+    display: flex;
+  }
+}
+
+.media__info {
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .media__info {
+    margin-bottom: 0;
+    width: 50%;
+  }
+}
+
+.media__text {
+  font-size: 20px;
+}
+
+.media__text:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.media__text--strong {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .media__map {
+    width: 50%;
+  }
 }
 
 .contentTitleWrapper {

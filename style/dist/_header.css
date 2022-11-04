@@ -1,53 +1,47 @@
-.headerWrapper {
+header .headerWrapper {
   display: flex;
   background-color: #0d0d0d;
   color: white;
   padding: 1rem 2rem;
 }
-
-.headerHamburger {
+header .headerHamburger {
   display: block;
 }
 @media screen and (min-width: 768px) {
-  .headerHamburger {
+  header .headerHamburger {
     display: none;
   }
 }
-
-.headerLogo {
+header .headerLogo {
   display: flex;
 }
-
-.listWrapper {
+header .listWrapper {
   margin-left: auto;
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .listWrapper {
+  header .listWrapper {
     display: block;
   }
 }
-
-.list {
+header .list {
   display: block;
 }
 @media screen and (min-width: 768px) {
-  .list {
+  header .list {
     display: flex;
   }
 }
-
-.list__item {
+header .list__item {
   padding: 1rem;
 }
 @media screen and (min-width: 768px) {
-  .list__item {
+  header .list__item {
     margin-right: 1rem;
     padding: 0;
   }
 }
-
-.list__link {
+header .list__link {
   display: block;
 }
 
