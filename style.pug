@@ -1,0 +1,18 @@
+doctype html
+html(lang="ja")
+  include template/_head
+  body
+    include template/_header
+    main
+      section.sectionWrapper
+        .contentTitleWrapper   
+          h1.contentTitle 授業スタイル
+        .contentSubTitleWrapper
+          h2.contentSubTitle 授業60分+質問付き自習30分
+        p.contentText 授業1コマ  前半60分授業＋後半30分質問付き自習の合計90分 です。
+        p.contentText 大手塾では長時間の授業をメインで行なっており、自分で手で動かして身につけていくという過程が不足しがちです。
+        include template/_hamburgerMenu      
+      section 
+      section 
+      section 
+    script(type="module" src="./script/modal.js")

@@ -46,6 +46,11 @@ a {
   color: inherit;
 }
 
+:root {
+  --main-color-first: #1aba1a;
+  --main-color-second: #4a86e8;
+}
+
 /**************************\
   Basic Modal Styles 
 \**************************/
@@ -290,6 +295,42 @@ body {
 .sectionWrapper {
   margin-inline: auto;
   width: min(80%, 1300px);
+}
+
+.contentTitleWrapper {
+  padding: 1rem 0 2rem;
+}
+
+.contentSubTitleWrapper {
+  padding: 1rem 0;
+}
+
+.contentTitle {
+  color: var(--main-color-second);
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.contentSubTitle {
+  color: var(--main-color-second);
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.contentText {
+  margin-bottom: 5px;
+}
+
+.content {
+  margin-bottom: 5rem;
+}
+
+.content__detail {
+  margin-bottom: 3rem;
+}
+
+.contentDetailTitle {
+  margin-bottom: 1rem;
 }
 
 .headerWrapper {
