@@ -1,4 +1,3 @@
-@use "../style/mixin/responsive" as *;
 body {
   width: 100%;
 }
@@ -25,6 +24,7 @@ body {
 .topMessageWrapper {
   margin: 5rem 0 3rem;
 }
+
 .topMessage {
   color: var(--sub-color);
   font-size: 32px;
@@ -34,20 +34,24 @@ body {
 .cardWrapper {
   display: block;
   margin-inline: auto;
-  @include responsive(md) {
+}
+@media screen and (min-width: 768px) {
+  .cardWrapper {
     display: flex;
   }
 }
 
-.card {
-  @include responsive(md) {
+@media screen and (min-width: 768px) {
+  .card {
     width: calc(100% / 3);
   }
 }
 
 .card:not(:last-child) {
   margin-bottom: 2rem;
-  @include responsive(md) {
+}
+@media screen and (min-width: 768px) {
+  .card:not(:last-child) {
     margin-right: 1.5rem;
     margin-bottom: 0;
   }
@@ -76,9 +80,10 @@ body {
 .inquiryWrapper {
   margin-bottom: 2rem;
 }
+
 .inquiryLink {
   display: inline-block;
-  background-color: rgba(86, 174, 86, 1);
+  background-color: #56ae56;
   padding: 1rem 2rem;
   border-radius: 3px;
   color: black;
@@ -92,14 +97,18 @@ body {
 
 .media {
   display: block;
-  @include responsive(md) {
+}
+@media screen and (min-width: 768px) {
+  .media {
     display: flex;
   }
 }
 
 .media__info {
   margin-bottom: 2rem;
-  @include responsive(md) {
+}
+@media screen and (min-width: 768px) {
+  .media__info {
     margin-bottom: 0;
     width: 50%;
   }
@@ -117,8 +126,8 @@ body {
   font-weight: bold;
 }
 
-.media__map {
-  @include responsive(md) {
+@media screen and (min-width: 768px) {
+  .media__map {
     width: 50%;
   }
 }
