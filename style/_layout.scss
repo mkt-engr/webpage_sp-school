@@ -59,6 +59,13 @@ body {
   text-align: center;
 }
 
+.card__img img {
+  transition: transform 200ms ease-out;
+}
+.card__img:hover img {
+  transform: translateY(-10px);
+}
+
 .timeList {
   margin-bottom: 2rem;
 }
