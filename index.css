@@ -160,7 +160,6 @@ a {
   border-style: none;
   border-width: 0;
   cursor: pointer;
-  -webkit-appearance: button;
   text-transform: none;
   overflow: visible;
   line-height: 1.15;
@@ -321,7 +320,6 @@ body {
 
 .topImage {
   width: 100%;
-  height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -366,6 +364,14 @@ body {
   color: var(--main-color-first);
   font-size: 32px;
   text-align: center;
+}
+
+.card__img img {
+  transition: transform 200ms ease-out;
+}
+
+.card__img:hover img {
+  transform: translateY(-10px);
 }
 
 .timeList {
