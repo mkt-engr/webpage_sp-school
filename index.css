@@ -549,10 +549,16 @@ body {
 #copy td,
 #copy table {
   border-collapse: collapse;
-  border: 1px solid #333;
+  border: 1px solid black;
+}
+#copy td,
+#copy th {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
 }
 #copy tbody th {
   border-right: 2px solid #333;
+  white-space: nowrap;
 }
 #copy thead th:not(:first-child) {
   background-color: var(--main-color-second);
@@ -562,13 +568,17 @@ body {
 }
 #copy th {
   padding: 0.5rem 0rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: white;
 }
 #copy td {
   text-align: right;
   padding-inline: 0.3rem;
-}
-#copy td {
   color: black;
+  white-space: nowrap;
 }
 #copy br.table {
   display: block;
@@ -578,28 +588,34 @@ body {
     display: none;
   }
 }
-#copy .text--alert {
+
+.text--alert {
   color: red;
 }
-#copy .text--center {
+
+.text--center {
   text-align: center;
 }
-#copy .text--overline {
+
+.text--overline {
   text-decoration: line-through;
 }
-#copy .captionWrapper {
+
+.captionWrapper {
   display: block;
 }
 @media screen and (min-width: 768px) {
-  #copy .captionWrapper {
+  .captionWrapper {
     display: flex;
   }
 }
-#copy .priceInfo {
+
+.priceInfo {
   margin-top: 1rem;
   margin-left: auto;
 }
-#copy .text--superscript::before {
+
+.text--superscript::before {
   content: "無料";
   color: red;
   position: absolute;

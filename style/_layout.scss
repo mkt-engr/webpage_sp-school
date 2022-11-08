@@ -244,11 +244,17 @@ body {
   td,
   table {
     border-collapse: collapse;
-    border: 1px solid #333;
+    border: 1px solid black;
   }
 
+  td,
+  th {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+  }
   tbody th {
     border-right: 2px solid #333;
+    white-space: nowrap;
   }
 
   thead th:not(:first-child) {
@@ -261,15 +267,17 @@ body {
 
   th {
     padding: 0.5rem 0rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
   }
 
   td {
     text-align: right;
     padding-inline: 0.3rem;
-  }
-
-  td {
     color: black;
+    white-space: nowrap;
   }
 
   br.table {
@@ -278,34 +286,36 @@ body {
       display: none;
     }
   }
-  .text--alert {
-    color: red;
-  }
+}
+.text--alert {
+  color: red;
+}
 
-  .text--center {
-    text-align: center;
-  }
+.text--center {
+  text-align: center;
+}
 
-  .text--overline {
-    text-decoration: line-through;
-  }
+.text--overline {
+  text-decoration: line-through;
+}
 
-  .captionWrapper {
-    display: block;
-    @include responsive(md) {
-      display: flex;
-    }
-  }
-
-  .priceInfo {
-    margin-top: 1rem;
-    margin-left: auto;
-  }
-
-  .text--superscript::before {
-    content: "無料";
-    color: red;
-    position: absolute;
-    transform: translate(6px, -16px);
+.captionWrapper {
+  display: block;
+  @include responsive(md) {
+    display: flex;
   }
 }
+
+.priceInfo {
+  margin-top: 1rem;
+  margin-left: auto;
+}
+
+.text--superscript::before {
+  content: "無料";
+  color: red;
+  position: absolute;
+  transform: translate(6px, -16px);
+}
+// https://csshtml.work/table-scroll/
+// TODO 縦横固定スクロール
