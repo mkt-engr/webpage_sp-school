@@ -122,6 +122,7 @@ body {
 
 .media__text--strong {
   font-weight: bold;
+  font-size: 30px;
 }
 
 .media__map {
@@ -162,6 +163,26 @@ body {
   margin-bottom: 3rem;
 }
 
+//共通のクラス
 .contentDetailTitle {
   margin-bottom: 1rem;
+  background-color: red;
+  display: inline-block;
+}
+
+.matsuki {
+  background-color: green;
+  color: white;
+}
+
+.courseAnal {
+  display: flex;
+}
+
+.courseAnal__text {
+  flex: 1;
+}
+
+.courseAnal__img {
+  width: 100px;
 }
