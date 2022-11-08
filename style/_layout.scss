@@ -1,4 +1,5 @@
 @use "../style/mixin/responsive" as *;
+
 body {
   width: 100%;
 }
@@ -9,6 +10,9 @@ body {
   margin-bottom: 3rem;
 }
 
+.sectionWrapper:last-child {
+  padding-bottom: 3rem;
+}
 .sectionWrapper--wide {
   width: 100%;
 }
@@ -185,4 +189,123 @@ body {
 
 .courseAnal__img {
   width: 100px;
+}
+
+//料金表
+#original {
+  .priceTable {
+    width: 100%;
+  }
+
+  .priceTable > * {
+    color: white;
+  }
+
+  th {
+    padding: 0.5rem 0rem;
+  }
+
+  td {
+    text-align: right;
+    padding-inline: 0.3rem;
+  }
+
+  .text {
+    color: white;
+  }
+
+  td {
+    background-color: #8eb9ff;
+    color: black;
+  }
+
+  br.table {
+    display: block;
+    @include responsive(md) {
+      display: none;
+    }
+  }
+
+  .text--head {
+    background-color: var(--main-color-second);
+  }
+
+  .text--alert {
+    color: yellow;
+  }
+
+  .text--center {
+    text-align: center;
+  }
+}
+
+#copy {
+  th,
+  td,
+  table {
+    border-collapse: collapse;
+    border: 1px solid #333;
+  }
+
+  tbody th {
+    border-right: 2px solid #333;
+  }
+
+  thead th:not(:first-child) {
+    background-color: var(--main-color-second);
+  }
+
+  .priceTable {
+    width: 100%;
+  }
+
+  th {
+    padding: 0.5rem 0rem;
+  }
+
+  td {
+    text-align: right;
+    padding-inline: 0.3rem;
+  }
+
+  td {
+    color: black;
+  }
+
+  br.table {
+    display: block;
+    @include responsive(md) {
+      display: none;
+    }
+  }
+  .text--alert {
+    color: red;
+  }
+
+  .text--center {
+    text-align: center;
+  }
+
+  .text--overline {
+    text-decoration: line-through;
+  }
+
+  .captionWrapper {
+    display: block;
+    @include responsive(md) {
+      display: flex;
+    }
+  }
+
+  .priceInfo {
+    margin-top: 1rem;
+    margin-left: auto;
+  }
+
+  .text--superscript::before {
+    content: "無料";
+    color: red;
+    position: absolute;
+    transform: translate(6px, -16px);
+  }
 }

@@ -314,6 +314,10 @@ body {
   margin-bottom: 3rem;
 }
 
+.sectionWrapper:last-child {
+  padding-bottom: 3rem;
+}
+
 .sectionWrapper--wide {
   width: 100%;
 }
@@ -501,6 +505,105 @@ body {
 
 .courseAnal__img {
   width: 100px;
+}
+
+#original .priceTable {
+  width: 100%;
+}
+#original .priceTable > * {
+  color: white;
+}
+#original th {
+  padding: 0.5rem 0rem;
+}
+#original td {
+  text-align: right;
+  padding-inline: 0.3rem;
+}
+#original .text {
+  color: white;
+}
+#original td {
+  background-color: #8eb9ff;
+  color: black;
+}
+#original br.table {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  #original br.table {
+    display: none;
+  }
+}
+#original .text--head {
+  background-color: var(--main-color-second);
+}
+#original .text--alert {
+  color: yellow;
+}
+#original .text--center {
+  text-align: center;
+}
+
+#copy th,
+#copy td,
+#copy table {
+  border-collapse: collapse;
+  border: 1px solid #333;
+}
+#copy tbody th {
+  border-right: 2px solid #333;
+}
+#copy thead th:not(:first-child) {
+  background-color: var(--main-color-second);
+}
+#copy .priceTable {
+  width: 100%;
+}
+#copy th {
+  padding: 0.5rem 0rem;
+}
+#copy td {
+  text-align: right;
+  padding-inline: 0.3rem;
+}
+#copy td {
+  color: black;
+}
+#copy br.table {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  #copy br.table {
+    display: none;
+  }
+}
+#copy .text--alert {
+  color: red;
+}
+#copy .text--center {
+  text-align: center;
+}
+#copy .text--overline {
+  text-decoration: line-through;
+}
+#copy .captionWrapper {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  #copy .captionWrapper {
+    display: flex;
+  }
+}
+#copy .priceInfo {
+  margin-top: 1rem;
+  margin-left: auto;
+}
+#copy .text--superscript::before {
+  content: "無料";
+  color: red;
+  position: absolute;
+  transform: translate(6px, -16px);
 }
 
 .headerWrapper {
