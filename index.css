@@ -507,6 +507,36 @@ body {
   width: 100px;
 }
 
+#original table {
+  border-collapse: collapse;
+}
+#original td,
+#original th {
+  white-space: nowrap;
+}
+#original th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+#original th {
+  background: #f2f2f2;
+}
+#original tr:first-child th:first-child {
+  z-index: 1;
+}
+#original td,
+#original th {
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+}
+#original tr:first-child th {
+  border-top: 2px solid white;
+}
+#original th:first-child {
+  border-left: 2px solid white;
+}
 #original .priceTable {
   width: 100%;
 }
