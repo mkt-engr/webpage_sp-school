@@ -191,135 +191,69 @@ body {
   width: 100px;
 }
 
-//料金表
-#original {
-  table {
-    border-collapse: collapse;
-  }
-  td,
-  th {
-    white-space: nowrap;
-  }
-  th {
-    position: sticky;
-    top: 0;
-    left: 0;
-  }
-  th {
-    background: #f2f2f2;
-  }
+.priceWrapper {
+  max-width: 1000px;
+  margin-inline: auto;
+}
 
-  tr:first-child th:first-child {
-    z-index: 1;
-  }
-  td,
-  th {
-    border-right: 2px solid white;
-    border-bottom: 2px solid white;
-  }
-  tr:first-child th {
-    border-top: 2px solid white;
-  }
-  th:first-child {
-    border-left: 2px solid white;
-  }
-  //自分で作成したもの
-  .priceTable {
-    width: 100%;
-  }
+.priceTable {
+  overflow: auto;
+}
+table {
+  border-collapse: collapse;
+}
+td,
+th {
+  white-space: nowrap;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+}
+td {
+  text-align: right;
+  padding-inline: 0.3rem;
+  background-color: #8eb9ff;
+  color: black;
+}
+th {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: #f2f2f2;
+  padding: 0.5rem;
+}
 
-  .priceTable > * {
-    color: white;
-  }
+tr:first-child th:first-child {
+  z-index: 1;
+}
 
-  th {
-    padding: 0.5rem 0rem;
-  }
+tr:first-child th {
+  border-top: 2px solid white;
+}
+th:first-child {
+  border-left: 2px solid white;
+}
 
-  td {
-    text-align: right;
-    padding-inline: 0.3rem;
-  }
+.priceTable {
+  width: 100%;
+}
 
-  .text {
-    color: white;
-  }
+.text {
+  color: white;
+}
 
-  td {
-    background-color: #8eb9ff;
-    color: black;
-  }
-
-  br.table {
-    display: block;
-    @include responsive(md) {
-      display: none;
-    }
-  }
-
-  .text--head {
-    background-color: var(--main-color-second);
-  }
-
-  .text--alert {
-    color: yellow;
-  }
-
-  .text--center {
-    text-align: center;
+br.table {
+  display: block;
+  @include responsive(md) {
+    display: none;
   }
 }
 
-#copy {
-  th,
-  td,
-  table {
-    border-collapse: collapse;
-    border: 1px solid black;
-  }
-
-  td,
-  th {
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
-  }
-  tbody th {
-    // border-right: 2px solid #333;
-    white-space: nowrap;
-  }
-
-  thead th:not(:first-child) {
-    background-color: var(--main-color-second);
-  }
-
-  .priceTable {
-    width: 100%;
-  }
-
-  th {
-    padding: 0.5rem 0rem;
-    position: sticky;
-    top: 0;
-    left: 0;
-    background-color: white;
-  }
-
-  td {
-    text-align: right;
-    padding-inline: 0.3rem;
-    color: black;
-    white-space: nowrap;
-  }
-
-  br.table {
-    display: block;
-    @include responsive(md) {
-      display: none;
-    }
-  }
+.text--head {
+  background-color: var(--main-color-second);
 }
-.text--alert {
-  color: red;
+
+.text--warning {
+  color: yellow;
 }
 
 .text--center {
@@ -348,5 +282,7 @@ body {
   position: absolute;
   transform: translate(6px, -16px);
 }
-// https://csshtml.work/table-scroll/
-// TODO 縦横固定スクロール
+
+.text--alert {
+  color: red;
+}

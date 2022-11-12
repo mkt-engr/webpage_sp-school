@@ -507,119 +507,77 @@ body {
   width: 100px;
 }
 
-#original table {
+.priceWrapper {
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+.priceTable {
+  overflow: auto;
+}
+
+table {
   border-collapse: collapse;
 }
-#original td,
-#original th {
+
+td,
+th {
   white-space: nowrap;
-}
-#original th {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  left: 0;
-}
-#original th {
-  background: #f2f2f2;
-}
-#original tr:first-child th:first-child {
-  z-index: 1;
-}
-#original td,
-#original th {
   border-right: 2px solid white;
   border-bottom: 2px solid white;
 }
-#original tr:first-child th {
-  border-top: 2px solid white;
-}
-#original th:first-child {
-  border-left: 2px solid white;
-}
-#original .priceTable {
-  width: 100%;
-}
-#original .priceTable > * {
-  color: white;
-}
-#original th {
-  padding: 0.5rem 0rem;
-}
-#original td {
+
+td {
   text-align: right;
   padding-inline: 0.3rem;
-}
-#original .text {
-  color: white;
-}
-#original td {
   background-color: #8eb9ff;
   color: black;
 }
-#original br.table {
-  display: block;
-}
-@media screen and (min-width: 768px) {
-  #original br.table {
-    display: none;
-  }
-}
-#original .text--head {
-  background-color: var(--main-color-second);
-}
-#original .text--alert {
-  color: yellow;
-}
-#original .text--center {
-  text-align: center;
-}
 
-#copy th,
-#copy td,
-#copy table {
-  border-collapse: collapse;
-  border: 1px solid black;
-}
-#copy td,
-#copy th {
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
-}
-#copy tbody th {
-  white-space: nowrap;
-}
-#copy thead th:not(:first-child) {
-  background-color: var(--main-color-second);
-}
-#copy .priceTable {
-  width: 100%;
-}
-#copy th {
-  padding: 0.5rem 0rem;
+th {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   left: 0;
-  background-color: white;
+  background: #f2f2f2;
+  padding: 0.5rem;
 }
-#copy td {
-  text-align: right;
-  padding-inline: 0.3rem;
-  color: black;
-  white-space: nowrap;
+
+tr:first-child th:first-child {
+  z-index: 1;
 }
-#copy br.table {
+
+tr:first-child th {
+  border-top: 2px solid white;
+}
+
+th:first-child {
+  border-left: 2px solid white;
+}
+
+.priceTable {
+  width: 100%;
+}
+
+.text {
+  color: white;
+}
+
+br.table {
   display: block;
 }
 @media screen and (min-width: 768px) {
-  #copy br.table {
+  br.table {
     display: none;
   }
 }
 
-.text--alert {
-  color: red;
+.text--head {
+  background-color: var(--main-color-second);
+}
+
+.text--warning {
+  color: yellow;
 }
 
 .text--center {
@@ -649,6 +607,10 @@ body {
   color: red;
   position: absolute;
   transform: translate(6px, -16px);
+}
+
+.text--alert {
+  color: red;
 }
 
 .headerWrapper {
