@@ -314,6 +314,10 @@ body {
   margin-bottom: 3rem;
 }
 
+.sectionWrapper:last-child {
+  padding-bottom: 3rem;
+}
+
 .sectionWrapper--wide {
   width: 100%;
 }
@@ -439,6 +443,7 @@ body {
 
 .media__text--strong {
   font-weight: bold;
+  font-size: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -481,6 +486,131 @@ body {
 
 .contentDetailTitle {
   margin-bottom: 1rem;
+  background-color: red;
+  display: inline-block;
+}
+
+.matsuki {
+  background-color: green;
+  color: white;
+}
+
+.courseAnal {
+  display: flex;
+}
+
+.courseAnal__text {
+  flex: 1;
+}
+
+.courseAnal__img {
+  width: 100px;
+}
+
+.priceWrapper {
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+.priceTable {
+  overflow: auto;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  white-space: nowrap;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+td {
+  text-align: right;
+  padding-inline: 0.3rem;
+  background-color: #8eb9ff;
+  color: black;
+}
+
+th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: #f2f2f2;
+  padding: 0.5rem;
+}
+
+tr:first-child th:first-child {
+  z-index: 1;
+}
+
+tr:first-child th {
+  border-top: 2px solid white;
+}
+
+th:first-child {
+  border-left: 2px solid white;
+}
+
+.priceTable {
+  width: 100%;
+}
+
+.text {
+  color: white;
+}
+
+br.table {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  br.table {
+    display: none;
+  }
+}
+
+.text--head {
+  background-color: var(--main-color-second);
+}
+
+.text--warning {
+  color: yellow;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.text--overline {
+  text-decoration: line-through;
+}
+
+.captionWrapper {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .captionWrapper {
+    display: flex;
+  }
+}
+
+.priceInfo {
+  margin-top: 1rem;
+  margin-left: auto;
+}
+
+.text--superscript::before {
+  content: "無料";
+  color: red;
+  position: absolute;
+  transform: translate(6px, -16px);
+}
+
+.text--alert {
+  color: red;
 }
 
 .headerWrapper {
