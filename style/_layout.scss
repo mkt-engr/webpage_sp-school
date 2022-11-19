@@ -6,8 +6,13 @@ body {
 }
 
 .sectionWrapper {
+  width: 80%;
   margin-inline: auto;
-  width: min(80%, 1300px);
+
+  @include responsive(md) {
+    width: min(60%, 1300px);
+  }
+
   margin-bottom: 3rem;
 }
 
@@ -200,6 +205,12 @@ body {
   }
 }
 
+.course__text ul {
+  list-style-type: disc;
+}
+.course__text li {
+  margin-left: 1rem;
+}
 .course__img {
   flex: 1;
 }
