@@ -486,13 +486,16 @@ body {
 
 .contentDetailTitle {
   margin-bottom: 1rem;
-  background-color: red;
   display: inline-block;
+  font-size: 26px;
 }
 
-.matsuki {
-  background-color: green;
-  color: white;
+.contentDetailTitle--standard {
+  color: green;
+}
+
+.contentDetailTitle--special {
+  color: red;
 }
 
 .course {
