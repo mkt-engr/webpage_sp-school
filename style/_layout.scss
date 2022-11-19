@@ -180,6 +180,25 @@ body {
   margin-bottom: 3rem;
 }
 
+.styleWrapper {
+  display: block;
+  @include responsive(md) {
+    display: flex;
+  }
+}
+.style__text {
+  width: 100%;
+  margin-right: 0;
+
+  @include responsive(md) {
+    width: 60%;
+    margin-right: 15px;
+  }
+}
+
+.style__img {
+  width: 40%;
+}
 //共通のクラス
 .contentDetailTitle {
   margin-bottom: 1rem;

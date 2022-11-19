@@ -503,6 +503,30 @@ body {
   margin-bottom: 3rem;
 }
 
+.styleWrapper {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .styleWrapper {
+    display: flex;
+  }
+}
+
+.style__text {
+  width: 100%;
+  margin-right: 0;
+}
+@media screen and (min-width: 768px) {
+  .style__text {
+    width: 60%;
+    margin-right: 15px;
+  }
+}
+
+.style__img {
+  width: 40%;
+}
+
 .contentDetailTitle {
   margin-bottom: 1rem;
   display: inline-block;
