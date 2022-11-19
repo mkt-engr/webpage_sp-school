@@ -499,12 +499,23 @@ body {
 }
 
 .course {
-  display: flex;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .course {
+    display: flex;
+  }
 }
 
 .course__text {
-  width: 65%;
-  margin-right: 15px;
+  width: 100%;
+  margin-right: 0;
+}
+@media screen and (min-width: 768px) {
+  .course__text {
+    width: 65%;
+    margin-right: 15px;
+  }
 }
 
 .course__img {

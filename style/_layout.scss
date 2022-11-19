@@ -184,16 +184,23 @@ body {
 }
 
 .course {
-  display: flex;
+  display: block;
+  @include responsive(md) {
+    display: flex;
+  }
 }
 
 .course__text {
-  width: 65%;
-  margin-right: 15px;
+  width: 100%;
+  margin-right: 0;
+
+  @include responsive(md) {
+    width: 65%;
+    margin-right: 15px;
+  }
 }
 
 .course__img {
-  // width: 35%;
   flex: 1;
 }
 
