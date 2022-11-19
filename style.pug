@@ -15,12 +15,16 @@ html(lang="ja")
             p.contentText 大手塾では長時間の授業をメインで行なっており、自分で手で動かして身につけていくという過程が不足しがちです。
             p.contentText SP個別学院では授業後即自習のスタイルを採用しており、授業内容を即座に落とし込むことが可能です。さらに自習時間中は納得するまで何度も講師陣に質問することができます。
         
-        .aa
-          img(src="/images/student-with-teacher.jpg", alt="")
-          img(src="/images/arrow-right.jpg", alt="").arrow-right
-          img(src="/images/self-study.jpg", alt="")
-          //- .style__img 
-          //-   img(src="images/bachin.jpg", alt="", srcset="")
+        .style-flow
+          .wrapper 
+            div.style-flow__text 授業60分
+            img(src="/images/student-with-teacher.jpg", alt="").lecture
+          .imgWrapper 
+            img(src="/images/arrow-right.jpg", alt="").arrow-right
+          .wrapper
+            div.style-flow__text 自習30分
+            img(src="/images/self-study.jpg", alt="").study
+  
 
         include template/_hamburgerMenu      
    
