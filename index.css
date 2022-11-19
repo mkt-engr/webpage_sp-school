@@ -650,6 +650,10 @@ br.table {
   color: red;
 }
 
+.mt-2 {
+  margin-top: 2rem;
+}
+
 .headerWrapper {
   display: flex;
   background-color: rgb(13, 13, 13);
