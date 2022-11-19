@@ -109,6 +109,11 @@ body {
   box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.65);
 }
 
+.imageNarrow {
+  width: 70%;
+  margin-inline: auto;
+}
+
 .media {
   display: block;
   @include responsive(md) {
