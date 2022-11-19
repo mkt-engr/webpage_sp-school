@@ -180,16 +180,18 @@ body {
   color: white;
 }
 
-.courseAnal {
+.course {
   display: flex;
 }
 
-.courseAnal__text {
-  flex: 1;
+.course__text {
+  width: 65%;
+  margin-right: 15px;
 }
 
-.courseAnal__img {
-  width: 100px;
+.course__img {
+  // width: 35%;
+  flex: 1;
 }
 
 .priceWrapper {
