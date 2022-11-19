@@ -335,6 +335,11 @@ body {
   text-align: center;
 }
 
+.topImageWrapper {
+  width: 90%;
+  margin-inline: auto;
+}
+
 .topImage {
   width: 100%;
   -o-object-fit: cover;

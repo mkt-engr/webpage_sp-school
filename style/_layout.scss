@@ -1,6 +1,5 @@
 @use "../style/mixin/responsive" as *;
 
-//コメント追加すげー
 body {
   width: 100%;
 }
@@ -26,7 +25,10 @@ body {
 .sectionWrapper--center {
   text-align: center;
 }
-
+.topImageWrapper {
+  width: 90%;
+  margin-inline: auto;
+}
 .topImage {
   width: 100%;
   object-fit: cover;
