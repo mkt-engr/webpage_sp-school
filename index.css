@@ -527,6 +527,23 @@ body {
   width: 40%;
 }
 
+.arrow-right {
+  mix-blend-mode: multiply;
+  width: 40px;
+}
+
+.aa {
+  display: flex;
+}
+
+.aa > img {
+  width: 40%;
+}
+
+.aa img:nth-child(2) {
+  width: 20%;
+}
+
 .contentDetailTitle {
   margin-bottom: 1rem;
   display: inline-block;

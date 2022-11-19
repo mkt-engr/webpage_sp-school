@@ -199,6 +199,25 @@ body {
 .style__img {
   width: 40%;
 }
+
+.arrow-right {
+  // rotate: 90deg;
+  mix-blend-mode: multiply; //背景透過
+  width: 40px;
+}
+
+.aa {
+  display: flex;
+}
+
+.aa > img {
+  width: 40%;
+}
+
+.aa img:nth-child(2) {
+  width: 20%;
+}
+
 //共通のクラス
 .contentDetailTitle {
   margin-bottom: 1rem;
