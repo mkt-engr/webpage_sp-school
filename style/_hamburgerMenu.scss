@@ -209,3 +209,7 @@
   padding: var(--modal-inner-padding) 30px;
   height: calc(100vh - var(--modal-inner-padding) * 2);
 }
+
+.modal__overlay {
+  z-index: 1;
+}

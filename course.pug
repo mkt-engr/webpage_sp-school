@@ -10,33 +10,79 @@ html(lang="ja")
         
         .content
           .content__detail
-            h3.contentDetailTitle.matsuki
-              | 小学生スタンダードコース
-            .courseAnal
-              p.courseAnal__text 小3-小6を対象としたベーシックなコースです。学校でのわからないところや進んだ内容をやりたいなど、一人ひとりに合わせた授業を行なっております。基礎学力の向上から発展的な内容の理解までを幅広くサポートしています。メイン教科は国語・数学です。
-              div.courseAnal__img
-                img(src="https://picsum.photos/200", alt="alt")
+            h3.contentDetailTitle.contentDetailTitle--standard
+              | 小学生コース
+            .course
+              .course__text 
+                ul
+                  li 小3-小6を対象としたベーシックなコースです。
+                  li 学校でのわからない箇所や進んだ内容をやりたいなど、一人ひとりに合わせた授業を行なっております。
+                  li メイン教科は国語・数学です。
+              div.course__img
+                img(src="images/mv_pc.jpg", alt="alt")
               
 
           .content__detail
-            h3.contentDetailTitle 小学生スペシャルコース
-            p 中学受験に特化したコースです。目標の中学校合格に向けた特別な授業をご提供いたします。基礎的な内容から発展的な問題の理解、公立小学校では習わないような範囲までしっかりお教えいたします。メイン教科は国語・数学です。
+            h3.contentDetailTitle.contentDetailTitle--special 小学生スペシャルコース
+            .course
+              .course__text
+                ul
+                  li 中学受験に特化したコースです。
+                  li 目標の中学校合格に向けた特別な授業をご提供します。
+                  li 基礎的な内容から発展的な問題の理解、公立小学校では習わないような範囲までしっかりお教えいたします。
+                  li メイン教科は国語・数学です。
+              div.course__img
+                img(src="images/46_1.jpg", alt="alt")
 
         .content
           .content__detail
-            h3.contentDetailTitle 中学生スタンダードコース
-            p 中学生を対象としたベーシックなコースです。学校でつまづいているや進んだ内容をやりたいなど、一人ひとりに合わせた授業を行なっております。基礎学力の向上から発展的な内容の理解を目標にしており、定期テスト・模試対策も行なっております。メイン教科は英語・数学です。
+            h3.contentDetailTitle.contentDetailTitle--standard 中学生コース
+            .course
+              .course__text 
+                ul
+                  li 中学1〜3年生を対象としたベーシックなコースです。
+                  li 学校でつまづいているや進んだ内容をやりたいなど、一人ひとりに合わせた授業を行なっております。
+                  li 基礎学力の向上から発展的な内容の理解を目標にしており、定期テスト・模試対策も行なっております。
+                  li メイン教科は英語・数学です。
+              div.course__img
+                img(src="images/jh-times-cramschool-eyecatch.jpg", alt="alt")
 
           .content__detail
-            h3.contentDetailTitle 中学生スペシャルコース
-            p 難関校を目指す中学生を対象とした特別コースです。1対1~2の超少人数制の授業で一人ひとりにみっちり寄り添います。基礎学力の向上から発展的な内容の理解をし、難関高校突破を目指します。メイン教科は英語・数学です。
+            h3.contentDetailTitle.contentDetailTitle--special 中学生スペシャルコース
+            .course
+              .course__text 
+                ul
+                  li 難関校を目指す中学生を対象とした特別コースです。
+                  li 1対1~2の超少人数制の授業で一人ひとりにみっちり寄り添います。基礎学力の向上から発展的な内容の理解をし、難関高校突破を目指します。
+                  li メイン教科は英語・数学です。
+              div.course__img
+                img(src="images/kanagawa-gakushujuku-tutoring-is-suitable.jpg", alt="alt")
 
         .content
           .content__detail
-            h3.contentDetailTitle 高校生スタンダードコース
-            p 基礎的な部分から発展的な内容まで個別にしっかりお教えいたします。メイン教科は英語・数学です。
+            h3.contentDetailTitle.contentDetailTitle--standard 高校生コース
+            .course
+              .course__text 
+                ul
+                  li 高1~3年生を対象としたベーシックなコースです
+                  li 基礎的な部分から発展的な内容まで個別にしっかりお教えいたします。
+                  li 志望校合格のための勉強計画作成や参考書のご紹介など、個別に徹底管理いたします。
+                  li メイン教科は英語・数学です。
+              div.course__img
+                img(src="images/course102.jpg", alt="alt")
+
+
           .content__detail
-            h3.contentDetailTitle 高校生スペシャルコース
-            p 難関校を目指す高校生を対象とした特別コースです。1対1~2の超少人数制の授業で一人ひとりにみっちり寄り添います。基礎学力の向上から発展的な内容の理解をし、難関大学突破を目指します。メイン教科は英語・数学です。
+            h3.contentDetailTitle.contentDetailTitle--special 高校生スペシャルコース
+            .course
+              .course__text 
+                ul
+                  li 難関校を目指す高校生を対象とした特別コースです。
+                  li 1対1~2の超少人数制の授業で一人ひとりにみっちり寄り添います。
+                  li 基礎学力の向上から発展的な内容の理解をし、難関大学突破を目指します。
+                  li 志望校合格のための勉強計画作成や参考書のご紹介など、個別に徹底管理いたします。
+                  li メイン教科は英語・数学です。
+              div.course__img
+                img(src="images/14.jpg", alt="alt")
     include template/_hamburgerMenu    
     script(type="module" src="./script/modal.js")

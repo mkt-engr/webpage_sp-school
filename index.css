@@ -304,14 +304,23 @@ body {
   height: calc(100vh - var(--modal-inner-padding) * 2);
 }
 
+.modal__overlay {
+  z-index: 1;
+}
+
 body {
   width: 100%;
 }
 
 .sectionWrapper {
+  width: 80%;
   margin-inline: auto;
-  width: min(80%, 1300px);
   margin-bottom: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .sectionWrapper {
+    width: min(60%, 1300px);
+  }
 }
 
 .sectionWrapper:last-child {
@@ -324,6 +333,11 @@ body {
 
 .sectionWrapper--center {
   text-align: center;
+}
+
+.topImageWrapper {
+  width: 90%;
+  margin-inline: auto;
 }
 
 .topImage {
@@ -414,6 +428,11 @@ body {
   box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.65);
 }
 
+.imageNarrow {
+  width: 70%;
+  margin-inline: auto;
+}
+
 .media {
   display: block;
 }
@@ -484,27 +503,89 @@ body {
   margin-bottom: 3rem;
 }
 
-.contentDetailTitle {
-  margin-bottom: 1rem;
-  background-color: red;
-  display: inline-block;
+.styleWrapper {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .styleWrapper {
+    display: flex;
+  }
 }
 
-.matsuki {
-  background-color: green;
-  color: white;
+.style__text {
+  flex: 1;
+  margin-right: 0;
 }
 
-.courseAnal {
+.style__img {
+  width: 40%;
+}
+
+.style-flow {
   display: flex;
 }
 
-.courseAnal__text {
-  flex: 1;
+.imgWrapper {
+  display: flex;
 }
 
-.courseAnal__img {
-  width: 100px;
+.arrow-right {
+  margin-top: auto;
+  margin-bottom: auto;
+  mix-blend-mode: multiply;
+}
+
+.style-flow__text {
+  text-align: center;
+  font-weight: bold;
+  font-size: 26px;
+  color: var(--main-color-second);
+}
+
+.contentDetailTitle {
+  margin-bottom: 1rem;
+  display: inline-block;
+  font-size: 26px;
+}
+
+.contentDetailTitle--standard {
+  color: green;
+}
+
+.contentDetailTitle--special {
+  color: red;
+}
+
+.course {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .course {
+    display: flex;
+  }
+}
+
+.course__text {
+  width: 100%;
+  margin-right: 0;
+}
+@media screen and (min-width: 768px) {
+  .course__text {
+    width: 65%;
+    margin-right: 15px;
+  }
+}
+
+.course__text ul {
+  list-style-type: disc;
+}
+
+.course__text li {
+  margin-left: 1rem;
+}
+
+.course__img {
+  flex: 1;
 }
 
 .priceWrapper {
@@ -611,6 +692,10 @@ br.table {
 
 .text--alert {
   color: red;
+}
+
+.mt-2 {
+  margin-top: 2rem;
 }
 
 .headerWrapper {
