@@ -168,7 +168,7 @@ body {
   font-size: 2rem;
 }
 
-.contentSubTitle--small{
+.contentSubTitle--small {
   font-size: 20px;
   font-weight: 400;
 }
@@ -270,11 +270,14 @@ body {
 .priceWrapper {
   max-width: 1000px;
   margin-inline: auto;
+  width: 95%;
 }
 
 .priceTable {
   overflow: auto;
+  width: 100%;
 }
+
 table {
   border-collapse: collapse;
 }
@@ -309,10 +312,6 @@ th:first-child {
   border-left: 2px solid white;
 }
 
-.priceTable {
-  width: 100%;
-}
-
 .text {
   color: white;
 }
@@ -327,9 +326,11 @@ br.table {
 .text--head {
   background-color: var(--main-color-second);
 }
-
-.text--tall{
-  padding:25px 0;
+.text--content {
+  text-align: center;
+}
+.text--tall {
+  padding: 25px 0;
 }
 
 .text--warning {
@@ -346,6 +347,7 @@ br.table {
 
 .captionWrapper {
   display: block;
+  // width: 90%;
   @include responsive(md) {
     display: flex;
   }

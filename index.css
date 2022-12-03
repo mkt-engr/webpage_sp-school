@@ -596,10 +596,12 @@ body {
 .priceWrapper {
   max-width: 1000px;
   margin-inline: auto;
+  width: 95%;
 }
 
 .priceTable {
   overflow: auto;
+  width: 100%;
 }
 
 table {
@@ -641,10 +643,6 @@ th:first-child {
   border-left: 2px solid white;
 }
 
-.priceTable {
-  width: 100%;
-}
-
 .text {
   color: white;
 }
@@ -660,6 +658,10 @@ br.table {
 
 .text--head {
   background-color: var(--main-color-second);
+}
+
+.text--content {
+  text-align: center;
 }
 
 .text--tall {
