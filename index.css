@@ -487,8 +487,13 @@ body {
 
 .contentSubTitle {
   color: var(--main-color-second);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 2rem;
+}
+
+.contentSubTitle--small {
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .contentText {

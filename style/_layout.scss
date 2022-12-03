@@ -1,9 +1,5 @@
 @use "../style/mixin/responsive" as *;
 
-<<<<<<< HEAD
-//コメント追加すげーなすごいです
-=======
->>>>>>> 9201b248ae9218f37fe1ade1ed0d90f028c737a8
 body {
   width: 100%;
 }
@@ -168,8 +164,13 @@ body {
 
 .contentSubTitle {
   color: var(--main-color-second);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 2rem;
+}
+
+.contentSubTitle--small{
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .contentText {
