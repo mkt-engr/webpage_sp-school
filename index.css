@@ -393,8 +393,13 @@ body {
 }
 
 .imageNarrow {
-  width: 70%;
+  width: 100%;
   margin-inline: auto;
+}
+@media screen and (min-width: 768px) {
+  .imageNarrow {
+    width: 70%;
+  }
 }
 
 .media {

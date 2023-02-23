@@ -110,7 +110,10 @@ body {
 }
 
 .imageNarrow {
-  width: 70%;
+  @include responsive(md) {
+    width: 70%;
+  }
+  width: 100%;
   margin-inline: auto;
 }
 
