@@ -170,7 +170,6 @@ body {
   margin: 0;
   will-change: transform;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transform: translateZ(0);
   transition: transform 0.25s ease-out;
